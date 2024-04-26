@@ -1,14 +1,14 @@
 import './App.css';
-import Header from './Components/Header';
-import Transactions from './Components/Transactions';
-
-import { GlobalProvider } from './context/GlobalState';
+import Practice from './Components/Practice';
+import LoginContextProvider from './context/LoginContextProvider';
+import DOM from './Components/DOM';
 
 function App() {
   return (
-    <div>
-      <h1>REACT PRACTICE</h1>
-    </div>
+    <LoginContextProvider>
+      <Practice />
+      <DOM />
+    </LoginContextProvider>
   );
 }
 
